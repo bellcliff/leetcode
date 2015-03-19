@@ -4,7 +4,7 @@ class Solution:
         _min = None
         num.sort()
         result = 0
-        for i in range(len(num)-3):
+        for i in range(len(num)-2):
             j = i + 1
             k = len(num) - 1
             while j < k:
@@ -21,4 +21,4 @@ class Solution:
                     k -= 1
         return result
 
-print Solution().threeSumClosest([1,1,1,0], 100)
+print Solution().threeSumClosest([1, 1, 1, 0, 11], 100)
