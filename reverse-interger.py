@@ -7,6 +7,8 @@ class Solution:
         temp = 0
         while x > 0:
             temp = temp * 10 + x % 10
+            if temp > 2147483647:
+                return 0
             x = x / 10
         if isNegative:
             temp *= -1
